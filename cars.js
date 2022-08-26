@@ -129,7 +129,7 @@ function bmwSum(cars){
 
 }
 
-console.log('1. Ferarris: ', ferraris());
-console.log('2. nineties: ', nineties());
+console.log('1. Ferarris: ', ferraris(cars));
+console.log('2. nineties: ', nineties(cars));
 console.log('3. List: ', list(cars));
 console.log('4. BMWSum:', bmwSum(cars));
