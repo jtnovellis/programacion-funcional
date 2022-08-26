@@ -119,15 +119,19 @@ function list(cars){
 };
 
 
-function bmwSum(cars){
+/* function bmwSum(cars){
     return cars.reduce((a, b)=> {
         if (b.brand === 'BMW') {
            a += b.price;
         };
         return a;
     }, 0); 
+}; */
 
-}
+/* ------------------------------------------------------------------------------------------- */
+// BONUS!!!!!!!
+
+const bmwSum = (cars) => cars.reduce((a, b) => b.brand === 'BMW' ? a + b.price : a, 0);
 
 console.log('1. Ferarris: ', ferraris(cars));
 console.log('2. nineties: ', nineties(cars));
